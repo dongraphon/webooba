@@ -1,0 +1,201 @@
+#rectangle{
+        
+    width:100%;
+    height:550px;
+    background: linear-gradient(90deg, #ff3b50, #4d267e);;
+    position: absolute;
+    left:0px;
+    top:0px;
+
+
+   }    
+
+   h1{ 
+    font-family: Roboto light;                    
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 52px;
+    color:white;
+    margin-top:0px;
+
+
+    
+}  .parent {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:50px;
+            left:0;
+            display:flex;
+            align-items: center;
+            align-content:center;
+            justify-content:center;
+            overflow: auto;
+        }
+    
+        .block {
+            
+        }
+    
+        p{
+            color:white;
+            width: 355px;
+            height: 185px;
+    
+    
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height:23px;
+    
+            
+        }
+    
+    
+        div .block {
+          
+          position: relative;
+          -webkit-animation: mymove 3s 1; /* Safari 4.0 - 8.0 */
+          animation-fill-mode: forwards;
+        }
+      
+        div:hover {
+          -webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
+          animation-play-state: running;
+        }
+      
+      
+      /* Safari 4.0 - 8.0 */
+      @-webkit-keyframes mymove {
+          from {left: 300px;}
+          to {left: 0px;}
+        }
+      
+      @keyframes mymove {
+          from {left: 300px;}
+          to {left: 0px;}
+      }
+
+      .parent {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:50px;
+        left:0;
+        display:flex;
+        align-items: center;
+        align-content:center;
+        justify-content:center;
+        overflow: auto;
+    }
+
+    .block {
+        
+    }
+
+    p{
+        color:white;
+        width: 355px;
+        height: 185px;
+
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height:23px;
+
+        
+    }
+
+
+    div .block {
+      
+      position: relative;
+      -webkit-animation: mymove 3s 1; /* Safari 4.0 - 8.0 */
+      animation-fill-mode: forwards;
+    }
+  
+    div:hover {
+      -webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
+      animation-play-state: running;
+    }
+  
+  
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+      from {left: 300px;}
+      to {left: 0px;}
+    }
+  
+  @keyframes mymove {
+      from {left: 300px;}
+      to {left: 0px;}
+  }
+
+  .text{
+    position:absolute;
+    text-align:center;
+    width: 100%;
+    height: 100%;
+    top:400px;
+    left:0;
+    display:flex;
+    align-items: center;
+    align-content:center;
+    justify-content:center;
+    overflow: auto;
+    
+}
+  .text2{
+        position:absolute;
+        text-align:center;
+        width: 100%;
+        height: 100%;
+        top:500px;
+        left:0;
+        display:flex;
+        align-items: center;
+        align-content:center;
+        justify-content:center;
+        overflow: auto;
+        
+    }
+
+
+    .text2{
+        position:absolute;
+        text-align:center;
+        width: 100%;
+        height: 100%;
+        top:500px;
+        left:0;
+        display:flex;
+        align-items: center;
+        align-content:center;
+        justify-content:center;
+        overflow: auto;
+        
+    }
+
+    #rectangle2{
+                
+        width:100%;
+        height:10px;
+        background: linear-gradient(to bottom, grey 0%, transparent 100%);;
+        position: absolute;
+        left:0px;
+        top:780px;
+    }    
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+.text3 {
+    margin-top:850px;
+    text-align:center;
+    
+   
+
+}
+
