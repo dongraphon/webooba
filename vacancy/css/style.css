@@ -1,3 +1,7 @@
+* {
+  transform: all .2s;
+}
+
 body {
   font-family: 'Roboto', 'Open Sans', sans-serif;
   font-size: 16px;
@@ -25,8 +29,8 @@ body {
   height: 32px;
   background-image: url(../img/logo.png);
   position: absolute;
-  top: 87px;
-  left: 500px;
+  top: 92px;
+  left: 511px;
 }
 
 .wrap h1 {
@@ -42,16 +46,28 @@ body {
 .wrap p {
   color: #fff;
   text-align: center;
-  line-height: 19px;
+  line-height: 18px;
   font-weight: 200;
-  letter-spacing: -0.5px;  
+  letter-spacing: -0.5px;
 }
 
-@media screen and (max-width: 950px) {}
+@media screen and (max-width: 980px) {
+  .logo {
+    left: 280px;
+  }
+}
 
-@media screen and (max-width: 775px) {}
+@media screen and (max-width: 665px) {
+  .logo {
+    left: 265px;
+  }
+}
 
-@media screen and (max-width: 570px) {}
+@media screen and (max-width: 540px) {
+  .logo {
+    left: 169px;
+  }
+}
 
 .info p {
   text-align: center;
@@ -64,9 +80,44 @@ body {
 }
 
 .line {
-  width: 1186px;
+  width: 872px;
+  margin-left: 156px;
   height: 11px;
   background-color: #d4cecf;
+  opacity: 0.23;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    width: 785px;
+  }
+
+  .line {
+    width: 590px;
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .container {
+    width: 496px;
+  }
+
+  .line {
+    width: 404px;
+    margin-left: 90px;
+  }
+}
+
+@media screen and (max-width: 547px) {
+  .container {
+    width: 457px;
+  }
+
+  .line {
+    width: 354px;
+    margin-left: 54px;
+  }
 }
 
 .view h1 {
@@ -91,7 +142,7 @@ body {
   overflow: hidden;
 }
 
-.icons-img img {  
+.icons-img img {
   height: 75px;
   width: 75px;
   padding-left: 43px;
@@ -122,23 +173,71 @@ body {
 }
 
 .circle {
-  padding-left: 561px;
+  padding-left: 587px;
   padding-top: 54px;
   line-height: 2;
   display: flex;
 }
 
 .circle-info p {
-  margin-left: 80px;
-  margin-top: -35px;
+  margin-left: 86px;
+  margin-top: -44px;
   color: #fff;
 }
 
-@media screen and (max-width: 950px) {}
+@media screen and (max-width: 980px) {
+  .block-background {
+    width: 1122px;
+    height: 545px;
+    margin-bottom: 42px;
+  }
 
-@media screen and (max-width: 775px) {}
+  .circle {
+    padding-left: 427px;
+  }
 
-@media screen and (max-width: 570px) {}
+  .circle-info p {
+    margin-left: 71px;
+    margin-top: -45px;
+  }
+
+  .circle-info img {
+    width: 32px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .block-background {
+    width: 1015px;
+    height: 435px;
+  }
+
+  .circle {
+    padding-left: 314px;
+  }
+
+  .circle-info p {
+    margin-left: 60px;
+    margin-top: -49px;
+  }
+}
+
+
+@media screen and (max-width: 547px) {
+  .block-background {
+    width: 748px;
+    height: 380px;
+  }
+
+  .circle {
+    padding-left: 255px;
+  }
+
+  .circle-info p {
+    margin-left: 49px;
+    margin-top: -50px;
+  }
+}
 
 .carousel {
   text-align: center;
@@ -177,11 +276,6 @@ body {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .dot {
@@ -228,10 +322,9 @@ body {
 }
 
 .jobs {
-  height: 264px;
+  height: 225px;
   background-color: #14064e;
-  margin-top: 36px;
-  /* text-align: center; */
+  margin-top: 12px;
 }
 
 .jobs h2 {
@@ -239,15 +332,13 @@ body {
   text-align: center;
   font-size: 16px;
   font-weight: 300;
-  padding-top: 37px;
+  margin-bottom: 17px;
 }
 
 .jobs p {
   color: #fff;
-  /* margin-left: 64px; */
-  /* margin-top: -36px; */
-  text-align: center;
   margin: 0 auto;
+  display: table;
 }
 
 .team {
@@ -318,34 +409,68 @@ body {
   padding-right: 12px;
 }
 
-.footer {
-  margin-top: 42px;
+@media screen and (max-width: 980px) {
+  .block1 {
+    margin-left: 127px;
+  }
+
+  .block2 {
+    margin-left: 127px;
+  }
 }
 
-.footer p {
-  text-align: center;
-  font-weight: 300;
-  /* text-decoration: none; */
-}
+  @media screen and (max-width: 790px) {
+    .block1 {
+      margin-left: -67px;     
+    }
 
-.footer-img { 
-  width: 120px;
-  height: 33px;
-  background-image: url(../img/ooba.png);
-  margin: 0 auto;
-}
+    .block2 {
+      margin-left: -67px; 
+    }
+  }
 
-.footer a {
-  text-decoration: none;
-  cursor: pointer;
-  color: black;
-}
-.footer a:hover {
-  color: rgb(179, 10, 10);  
-}
+  @media screen and (max-width: 547px) {
+    .block1 {
+      margin-left: 0;
+      display: unset;
+    }
 
-.footer img {
+    .block2 {
+      margin-left: 0;
+      display: unset;
+    }
+
+  }
+
+
+  .footer {
+    margin-top: 42px;
+  }
+
+  .footer p {
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .footer-img {
+    width: 120px;
+    height: 33px;
+    background-image: url(../img/ooba.png);
+    margin: 0 auto;
+  }
+
+  .footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+  }
+
+  .footer a:hover {
+    color: rgb(179, 10, 10);
+  }
+
+  .footer img {
     margin: 0 auto;
     display: grid;
     padding-top: 32px;
-}
+  }
