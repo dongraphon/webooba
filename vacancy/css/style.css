@@ -1,5 +1,6 @@
 body {
-  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 26px;
   margin: 0;
@@ -13,7 +14,7 @@ body {
 .wrap {
   width: 100%;
   height: 515px;
-  background: linear-gradient(90deg, #ff3b50, #4d267e);
+  background: linear-gradient(90deg, #ff3b50, #5d2383);
   position: absolute;
   top: 0;
   padding: 0;
@@ -22,35 +23,120 @@ body {
 
 .wrap .circle1 {
   transform: translate(860px);
-  margin-top: 78px;
+  margin-top: 8px;
   position: relative;
-  -webkit-animation: move 2s ease-in-out 1s;
+
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 14s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+
+  animation-name: move;
+  animation-duration: 14s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @-webkit-keyframes move {
-  from {
+  0% {
+    left: 0px;
     top: 0px;
   }
 
-  to {
-    top: 30px;
+  50% {
+    left: 200px;
+  }
+
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 200px;
+  }
+
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
   }
 }
 
 .wrap .circle2 {
-  transform: translate(230px);
+  transform: translate(82px);
   position: relative;
   margin-top: 78px;
-  -webkit-animation: mymove 2s ease-in-out 1s;
+
+  -webkit-animation-name: mymove;
+  -webkit-animation-duration: 14s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+
+  animation-name: mymove;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes mymove {
-  from {
+  0% {
+    left: 0px;
     top: 0px;
   }
 
-  to {
-    top: 30px;
+  50% {
+    left: 100px;
+  }
+
+  75% {
+    left: 0px;
+    top: 100px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes mymove {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 100px;
+  }
+
+  75% {
+    left: 0px;
+    top: 100px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
   }
 }
 
@@ -59,7 +145,7 @@ body {
   letter-spacing: 8px;
   font-size: 35px;
   font-weight: 320;
-  line-height: 43px;
+  line-height: 35px;
   text-align: left;
 }
 
@@ -68,73 +154,72 @@ body {
   text-align: left;
   line-height: 22px;
   font-weight: 200;
-  letter-spacing: -0.5px;
+  letter-spacing: 0.5px;
 }
 
 .block {
   padding-top: 85px;
   text-align: center;
-  -webkit-animation: come 3s 1;
-  animation-fill-mode: forwards;
   width: 375px;
   margin: 0 auto;
 }
 
-div:hover {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-@-webkit-keyframes come {
-  from {
-    left: 300px;
-  }
-
-  to {
-    left: 0px;
-  }
-}
-
-@keyframes come {
-  from {
-    left: 300px;
-  }
-
-  to {
-    left: 0px;
-  }
-}
-
 .wrap .crests1 {
-  transform: translateX(-892px);
-  margin-top: 360px;
+  transform: translateX(-200px);
+  margin-top: 162px;
   position: relative;
-  -webkit-animation: crests 0.5s ease-in-out 1s;
+
+  -webkit-animation-name: crests;
+  -webkit-animation-duration: 14s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+
+  animation-name: crests;
+  animation-duration: 14s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @-webkit-keyframes crests {
-  from {
-    top: 30px;
+  0% {
+    left: 16px;
+    top: 0px;
   }
 
-  to {
+  50% {
+    left: 200px;
+  }
+
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    left: 0px;
     top: 0px;
   }
 }
 
-.wrap .crests2 {
-  transform: translate(-362px);
-  margin-top: 393px;
-  position: relative;
-  -webkit-animation: crest 1s ease-in-out 1s;
-}
-
-@-webkit-keyframes crest {
-  from {
-    top: 30px;
+@keyframes crests {
+  0% {
+    left: 16px;
+    top: 0px;
   }
 
-  to {
+  50% {
+    left: 200px;
+  }
+
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    left: 0px;
     top: 0px;
   }
 }
@@ -143,7 +228,8 @@ div:hover {
   text-align: center;
   letter-spacing: 1.2px;
   font-size: 16px;
-  padding: 0 20px 0 20px;
+  padding: 9px 20px 4px 20px;
+  font-weight: 300;
 }
 
 .ooba-p {
@@ -154,8 +240,15 @@ div:hover {
   width: 90%;
   margin-left: 25px;
   height: 11px;
-  background-color: #d4cecf;
-  background: radial-gradient(#ccc5c5 20%, #fefeff);
+  background-color: #ffffff;
+  background: radial-gradient(#ccc5c5 20%, #f6f6f7);
+  margin-top: 47px;
+  border-radius: 35%;
+  opacity: 0.3;
+}
+
+.about {
+  margin-top: 70px;
 }
 
 .view h1 {
@@ -163,7 +256,7 @@ div:hover {
   padding: 0px 15px 0px 0px;
   font-size: 42px;
   letter-spacing: -0.5px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 50px;
 }
 
@@ -184,13 +277,15 @@ div:hover {
   height: 75px;
   width: 75px;
   padding-left: 43px;
+  font-weight: 300;
+  opacity: 0.5;
 }
 
 .icons-img p {
-  text-align: center;
   font-size: 14px;
   letter-spacing: 2px;
   line-height: 18px;
+  font-weight: 300;
 }
 
 .about h1 {
@@ -200,15 +295,18 @@ div:hover {
   margin-bottom: 33px;
 }
 
-.block-background {
-  background-image: url(../img/mid.png);
-  background-size: 96% 94%;
-  background-repeat: no-repeat;
-  height: 575px;
+.block-background { 
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(212, 7, 45, 0.877), rgba(6, 44, 228, 0.877)), url(../img/ooba.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .circle {
   margin-left: 28%;
+  padding-top: 26px;
 }
 
 .circle li {
@@ -216,27 +314,30 @@ div:hover {
 }
 
 .circle p {
-  margin: -51px 0 -1px 0;
+  margin: -30px 0 -1px 0;
   margin-left: 0;
   text-align: left;
   color: #fff;
-  padding-left: 80px;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 60px;
 }
 
 .circle-info .img {
   margin: 27px 0 0px 0;
+  width: 25px;
 }
 
 .carousel {
   text-align: center;
   font-size: 21px;
   letter-spacing: 1.6px;
-  font-weight: 400;
-  margin-bottom: 23px;
+  font-weight: 300;
+  margin-bottom: 47px;
+  padding-top: 37px;
 }
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1200px;
   position: relative;
   margin: auto;
 }
@@ -267,8 +368,8 @@ div:hover {
 }
 
 .dots {
-  margin-top: -45px;
-  padding-bottom: 40px;
+  margin-top: -46px;
+  padding-bottom: 0px;
   text-align: center;
 }
 
@@ -288,28 +389,30 @@ div:hover {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  padding-top: 26px;
+  padding-top: 68px;
 }
 
 .jobs {
   background-color: #14064e;
   background-size: 100% 100%;
-  height: 220px;
+  height: 357px;
 }
 
 .job-item {
   width: 413px;
   text-align: center;
   margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 .jobs p {
   margin: -38px 0px 12px 51px;
   color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .jobs img {
-  margin-top: 10px;
+  margin-top: 33px;
 }
 
 .jobs ul {
@@ -323,9 +426,9 @@ div:hover {
 .team {
   text-align: center;
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 4px;
-  margin-bottom: 42px;
+  margin-bottom: 58px;
   padding-top: 29px;
 }
 
@@ -346,7 +449,7 @@ div:hover {
 .block1 h3 {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .block1 p {
@@ -359,7 +462,7 @@ div:hover {
 .block2 h3 {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .block2 p {
@@ -389,7 +492,7 @@ div:hover {
 }
 
 .wrap-footer {
-  padding-top: 55px;
+  padding-top: 73px;
   position: relative;
   background-image: url(../img/layfooter.png);
 }
@@ -410,10 +513,6 @@ div:hover {
   text-decoration: none;
   cursor: pointer;
   color: black;
-}
-
-.footer a:hover {
-  color: rgb(179, 10, 10);
 }
 
 .footer img {
@@ -437,30 +536,11 @@ div:hover {
 
   .wrap .crests1 {
     transform: translate(-782px);
-  }
-
-  .wrap .crests2 {
-    transform: translate(-200px);
-  }
-
-  .block-background {
-    background-size: 92% 84%;
-    margin-bottom: -90px;
-  }
-
-  .circle-info .img {
-    margin: 20px 0 0px 0;
-    width: 37px;
-  }
-
-  .circle {
-    margin-left: 25%;
-  }
-
-  .circle p {
-    margin: -36px 0 0 -20px;
-    font-size: 14px;
-  }
+  }   
+  
+  .about {
+    width: 100%;
+  }  
 }
 
 @media screen and (max-width: 960px) {
@@ -478,32 +558,6 @@ div:hover {
 
   .wrap .crests1 {
     transform: translate(-600px);
-  }
-
-  .wrap .crests2 {
-    transform: translate(-123px);
-  }
-
-  .about h1 {
-    margin: 0;
-  }
-
-  .block-background {
-    background-size: 94% 84%;
-  }
-
-  .circle-info .img {
-    margin: 18px 0 0px 0;
-    width: 36px;
-  }
-
-  .circle {
-    margin-left: 20%;
-  }
-
-  .circle p {
-    margin: -36px 0 0 -38px;
-    font-size: 14px;
   }
 
   .block1 {
@@ -529,31 +583,7 @@ div:hover {
   .view h1 {
     font-size: 26px;
   }
-
-  .about h1 {
-    margin: 0;
-  }
-
-  .block-background {
-    background-size: 89% 69%;
-    margin-bottom: -179px;
-  }
-
-  .circle-info .img {
-    margin: 25px 0 0px 0;
-    width: 17px;
-  }
-
-  .circle {
-    margin-left: 19%;
-  }
-
-  .circle p {
-    margin: -36px 0 -1px -58px;
-    padding-top: 7px;
-    font-size: 13px;
-  }
-
+  
   .block1 {
     margin-left: 30px;
   }
@@ -587,32 +617,11 @@ div:hover {
 
   .wrap .crests1 {
     transform: translate(-480px);
-  }
-
-  .wrap .crests2 {
-    transform: translate(-100px);
-  }
+  }  
 
   .icon-wrap {
     display: grid;
-  }
-
-  .block-background {
-    background-size: 99% 69%;
-  }
-
-  .circle {
-    margin-left: 21%;
-  }
-
-  .circle-info .img {
-    margin: 14px 0 0px 0;
-    width: 17px;
-  }
-
-  .circle p {
-    width: 196px;
-  }
+  }  
 
   .block1 {
     margin-left: 0;
@@ -642,25 +651,14 @@ div:hover {
     transform: translate(-350px);
   }
 
-  .block-background {
-    background-size: 96% 60%;
-    margin-bottom: -254px;
-  }
+  .about {
+    width: 100%;
+  }  
+}
 
+@media screen and (max-width: 560px) { 
   .circle {
-    margin-left: 19%;
-  }
-
-  .circle-info .img {
-    margin: 8px 0 0px -12px;
-    width: 16px;
-  }
-
-  .circle p {
-    margin: -38px 0 0px -92px;
-    padding-top: 6px;
-    font-size: 23px;
-    font-size: 12px;
-    width: 178px;
+    margin-left: 0%;
+    padding-top: 20px;
   }
 }
